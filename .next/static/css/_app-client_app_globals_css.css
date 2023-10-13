@@ -487,9 +487,6 @@ video {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
-.mr-3 {
-  margin-right: 0.75rem;
-}
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -498,6 +495,9 @@ video {
 }
 .ml-2 {
   margin-left: 0.5rem;
+}
+.mr-3 {
+  margin-right: 0.75rem;
 }
 .mt-1 {
   margin-top: 0.25rem;
@@ -565,14 +565,14 @@ video {
 .table {
   display: table;
 }
-.h-64 {
-  height: 16rem;
-}
 .h-72 {
   height: 18rem;
 }
 .h-36 {
   height: 9rem;
+}
+.h-64 {
+  height: 16rem;
 }
 .h-screen {
   height: 100vh;
@@ -595,14 +595,14 @@ video {
 .w-screen {
   width: 100vw;
 }
-.w-\[450px\] {
-  width: 450px;
-}
 .w-64 {
   width: 16rem;
 }
 .w-full {
   width: 100%;
+}
+.w-\[450px\] {
+  width: 450px;
 }
 .w-3\/5 {
   width: 60%;
@@ -722,13 +722,13 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
-}
 .bg-red-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -744,22 +744,22 @@ video {
 .bg-center {
   background-position: center;
 }
-.p-2 {
-  padding: 0.5rem;
-}
 .p-1 {
   padding: 0.25rem;
+}
+.p-2 {
+  padding: 0.5rem;
 }
 .p-3 {
   padding: 0.75rem;
 }
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+.px-36 {
+  padding-left: 9rem;
+  padding-right: 9rem;
 }
 .px-9 {
   padding-left: 2.25rem;
@@ -769,9 +769,9 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.px-36 {
-  padding-left: 9rem;
-  padding-right: 9rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .py-9 {
   padding-top: 2.25rem;
@@ -811,17 +811,17 @@ video {
 .text-2xl {
   font-size: 22px;
 }
-.text-5xl {
-  font-size: 40px;
-}
-.text-lg {
-  font-size: 18px;
-}
 .text-reg {
   font-size: 15px;
 }
 .text-sm {
   font-size: 13px;
+}
+.text-5xl {
+  font-size: 40px;
+}
+.text-lg {
+  font-size: 18px;
 }
 .text-3xl {
   font-size: 25px;
@@ -844,13 +844,13 @@ video {
 .capitalize {
   text-transform: capitalize;
 }
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
-}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 .text-red-600 {
   --tw-text-opacity: 1;
