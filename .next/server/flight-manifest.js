@@ -5,7 +5,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "",
         "chunks": [
-          "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
+          "app/reserve/[slug]/page:app/reserve/[slug]/page"
         ],
         "async": false
       },
@@ -13,7 +13,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [
-          "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
+          "app/reserve/[slug]/page:app/reserve/[slug]/page"
         ],
         "async": false
       },
@@ -21,7 +21,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "default",
         "chunks": [
-          "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
+          "app/reserve/[slug]/page:app/reserve/[slug]/page"
         ],
         "async": false
       }
@@ -171,7 +171,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
+        "app/reserve/[slug]/page:app/reserve/[slug]/page"
       ],
       "async": false
     },
@@ -179,7 +179,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
+        "app/reserve/[slug]/page:app/reserve/[slug]/page"
       ],
       "async": false
     },
@@ -187,7 +187,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
+        "app/reserve/[slug]/page:app/reserve/[slug]/page"
       ],
       "async": false
     }
@@ -197,7 +197,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
+        "app/reserve/[slug]/page:app/reserve/[slug]/page"
       ],
       "async": false
     },
@@ -205,7 +205,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
+        "app/reserve/[slug]/page:app/reserve/[slug]/page"
       ],
       "async": false
     },
@@ -213,7 +213,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
+        "app/reserve/[slug]/page:app/reserve/[slug]/page"
       ],
       "async": false
     }
