@@ -1,9 +1,7 @@
-import React from "react";
-import Link from "next/link";
-import NavBar from "../components/NavBar";
-import SearchSideBar from "./components/SearchSideBar";
-import RestaurantCard from "./components/RestaurantCar";
-import Header from "./components/Header";
+import React from 'react';
+import SearchSideBar from './components/SearchSideBar';
+import RestaurantCard from './components/RestaurantCar';
+import Header from './components/Header';
 
 const SearchPage = () => {
   return (
