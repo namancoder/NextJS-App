@@ -2,9 +2,9 @@
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 
-const SearchBar = () => {
+const SearchBar = ({ cityParam }: { cityParam?: string }) => {
   const router = useRouter();
-  const [location, setLocation] = useState('');
+  const [location, setLocation] = useState(cityParam || '');
 
   return (
     <div className="text-left text-lg py-3 m-auto flex justify-center">
