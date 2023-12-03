@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import RestaurantNavBar from '../components/RestaurantNavBar';
-import Title from '../components/Title';
-import Rating from '../components/Rating';
-import Description from '../components/Description';
-import Images from '../components/Images';
-import Reviews from '../components/Reviews';
-import ReservationCard from '../components/ReservationCard';
-import { PrismaClient } from '@prisma/client';
-import { notFound } from 'next/navigation';
+import RestaurantNavBar from "./components/RestaurantNavBar";
+import Title from "./components/Title";
+import Rating from "./components/Rating";
+import Description from "./components/Description";
+import Images from "./components/Images";
+import Reviews from "./components/Reviews";
+import ReservationCard from "./components/ReservationCard";
+import { PrismaClient } from "@prisma/client";
+import { notFound } from "next/navigation";
 
 interface Restaurant {
   name: string;
@@ -19,9 +19,7 @@ interface Restaurant {
 }
 
 const prisma = new PrismaClient();
-const fetchRestaurantbySlug = async (
-  slug: string
-): Promise<Restaurant> => {
+const fetchRestaurantbySlug = async (slug: string): Promise<Restaurant> => {
   const restaurant = await prisma.restaurant.findUnique({
     where: {
       slug,
@@ -40,15 +38,11 @@ const fetchRestaurantbySlug = async (
   return restaurant;
 };
 
-const RestaurantDetails = async ({
-  params,
-}: {
-  params: { slug: string };
-}) => {
+const RestaurantDetails = async ({ params }: { params: { slug: string } }) => {
   const restaurant = await fetchRestaurantbySlug(params.slug);
   return (
     <>
-      <div className="bg-white w-[70%] rounded p-3 shadow">
+      <div className='bg-white w-[70%] rounded p-3 shadow'>
         <RestaurantNavBar slug={restaurant.slug} />
         <Title name={restaurant.name} />
         <Rating />
@@ -57,7 +51,7 @@ const RestaurantDetails = async ({
         <Reviews />
       </div>
       <ReservationCard />
-      {/* DESCRIPTION PORTION */} {/* RESERVATION CARD PORTION */}{' '}
+      {/* DESCRIPTION PORTION */} {/* RESERVATION CARD PORTION */}{" "}
       {/* RESERVATION
           CARD PORTION */}
     </>

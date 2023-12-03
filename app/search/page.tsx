@@ -1,14 +1,9 @@
-import React from 'react';
-import SearchSideBar from './components/SearchSideBar';
-import RestaurantCard from './components/RestaurantCar';
-import Header from './components/Header';
-import {
-  Cuisine,
-  PRICE,
-  Location,
-  PrismaClient,
-} from '@prisma/client';
-import SearchBar from '../components/SearchBar';
+import React from "react";
+import SearchSideBar from "./components/SearchSideBar";
+import RestaurantCard from "./components/RestaurantCar";
+import Header from "./components/Header";
+import { Cuisine, PRICE, Location, PrismaClient } from "@prisma/client";
+import SearchBar from "../components/SearchBar";
 interface Restaurant {
   id: number;
   name: string;
@@ -62,7 +57,7 @@ const fetchRestaurantByFilters = async (
       },
     }),
   };
-  console.log('filters', filtersObject);
+  console.log("filters", filtersObject);
   const queryRestaurants = await prisma.restaurant.findMany({
     where: {
       ...filtersObject,
@@ -89,24 +84,22 @@ const SearchPage = async ({
     searchParams.cuisine,
     searchParams.price
   );
-  console.log('filters1', restaurants);
+  console.log("filters1", restaurants);
   const locations = await fetchLocations();
   const cuisines = await fetchCuisines();
   return (
     <>
-      <div className="bg-gradient-to-r to-[#5f6984] from-[#0f1f47] p-2">
-        <SearchBar cityParam={searchParams.city} />
-      </div>
-      <div className="flex py-4 m-auto w-2/3 items-start">
+      <Header />
+      <div className='flex py-4 m-auto w-2/3 items-start'>
         <SearchSideBar
           locations={locations}
           cuisines={cuisines}
           searchParams={searchParams}
         />
-        <div className="inline">
+        <div className='inline'>
           {restaurants.length > 0 ? (
             restaurants.map((item: any) => {
-              console.log('item', item);
+              console.log("item", item);
               return <RestaurantCard key={item.id} item={item} />;
             })
           ) : (
