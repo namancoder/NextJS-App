@@ -3,7 +3,6 @@ import SearchSideBar from "./components/SearchSideBar";
 import RestaurantCard from "./components/RestaurantCar";
 import Header from "./components/Header";
 import { Cuisine, PRICE, Location, PrismaClient } from "@prisma/client";
-import SearchBar from "../components/SearchBar";
 interface Restaurant {
   id: number;
   name: string;
