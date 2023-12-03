@@ -12,7 +12,7 @@ const RestaurantLayout = ({
   // console.log('abc', params);
   return (
     <main>
-      <Header slug={params.slug} />
+      <Header name={params.slug} />
       <div className='flex m-auto w-2/3 justify-between items-start 0 -mt-11'>
         {children}
       </div>
